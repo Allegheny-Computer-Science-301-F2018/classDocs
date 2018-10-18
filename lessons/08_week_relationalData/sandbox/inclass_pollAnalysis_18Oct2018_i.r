@@ -1,10 +1,12 @@
 # date: 18 Oct 2018
+# ref: https://projects.fivethirtyeight.com/trump-approval-ratings/
 
 library(tidyverse)
 library(lubridate)
 
 #polllist <- file.choose() # filename of the data
-#pollData <- read.csv(polllist, header = TRUE) # import the 
+#pollData <- read.csv(polllist, header = TRUE) # import the data from the file that we chose
+
 pollData <- read.csv("~/Desktop/here/approval_polllist_17Oct2018.csv", header = TRUE) # import the data from the file
 
 View(pollData) # make sure that the data set was actually loaded!
