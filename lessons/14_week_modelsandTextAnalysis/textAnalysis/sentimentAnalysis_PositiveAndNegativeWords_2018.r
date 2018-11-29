@@ -18,13 +18,13 @@ original_books <- austen_books() %>%
   mutate(linenumber = row_number(),
          chapter = cumsum(str_detect(text, regex("^chapter [\\divxlc]", ignore_case = TRUE)))) %>% ungroup()
 
-original_books
+View(original_books)
 
 
 tidy_books <- original_books %>%
   unnest_tokens(word, text) #make a list of words from the paragraphs
 
-tidy_books
+View(tidy_books)
 
 
 data("stop_words")
